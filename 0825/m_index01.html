@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>지니펫 모바일 메인페이지</title>
+    <!-- css초기화 -->
+    <link href-="./css/reset.css" rel="stylesheet"
+    type="text/css">
+    <style>
+      body{
+        font-family:"맑은 고딕",arial,sans-serif;
+        font-size:12px;
+        color:#333333;
+      }
+      a{
+        color:#333333;
+        text-decoration:none;
+      }
+      /* 체크방식 */
+      #toggle{
+        display:none;
+      }
+      header{
+        background-color:#333333;
+        height:64px;
+        position:relative;
+      }
+      header>h1{
+        text-align:center;
+      }
+      header>h1 img{
+        height:50px;
+        padding-top:7px;
+      }
+      header label[for="toggle"],.c_btn{
+        position:absolute;
+        top:11px;
+      }
+      header label[for="toggle"]{
+        left:10px;
+      }
+      header .c_btn{
+        right:10px;
+      }
+      header label[for="toggle"] img,.c_btn img{
+        width:40px;
+      }
+
+      /* 메인서식 */
+      main{}
+      #slide>h2{display:none;}
+      #slide{
+        height:762px;
+        background-image:url(./images01/mo_bg_01.jpg);
+        background-repeat:no-repeat;/*배경 이미지 한번만 나옴*/
+        background-position:center;/*배경 이미지 위치 가운데*/
+        text-align:center;
+      }
+
+      /* 푸터영역 */
+      footer{
+        background-color:#333333;
+        text-align:center;
+        padding:10px 0px;
+      }
+      footer>p{
+        color:#ffffff;
+        line-height:40px;
+      }
+      footer>address{
+        font-style:normal;
+        color:#ffffff;
+      }
+    </style>
+</head>
+<body>
+    <input type="checkbox" id="toggle">
+    <!-- 상단헤더영역 시작 -->
+    <header>
+        <h1>
+            <a href="m_index.com" title="메인페이지로 바로가기">
+                <img src="./images01/logo_clr.png" alt="상단로고">
+            </a>
+        </h1>
+
+        <label for="toggle"><img src="./images01/topIcon_burger.png" alt="전체메뉴"></label>
+        <a href="cart.html" title="장바구니 페이지 바로가기" class="c_btn">
+            <img src="./images01/topIcon_cart.png" alt="장바구나">
+        </a>
+    </header>
+
+    <!-- 메인영역 시작 -->
+    <main>
+        <article id="slide">
+            <h2>메인 슬라이드</h2>
+            <img src="./images01/mo_txt_01.png" alt="배경 위 텍스트 사진">
+        </article>
+    </main>
+
+    <!-- 푸터영역 시작 -->
+    <footer>
+        <p>회사정보, 하단로고,개인정보취급방침, 이용약관, 패밀리사이트</p>
+        <address>주소, 카피라이트</address>
+    </footer>
+</body>
+</html>

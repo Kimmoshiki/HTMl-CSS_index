@@ -1,0 +1,71 @@
+@charset "utf-8";
+
+
+/* 슬라이드 */
+.slide>a>img{
+    width:662px;
+    height:399px;
+}
+.slide{
+   display:flex;
+   justify-content:space-around;
+}
+
+section>h2,.left_con>h2{
+     display:none;
+}
+
+/* 콘텐츠 */
+.m_sec{
+    margin-bottom:40px;
+    
+}
+.left_con .m_lnb>ul{
+    display:flex;
+    justify-content:space-around;
+    width:309px;
+    flex-wrap:wrap;
+}
+
+.cen_con h2{
+    font-size:20px;
+    padding:15px 10px;
+}
+.cen_con a>img{
+    float:right;
+    position:relative;
+    top:-30px;
+    right:20px;
+    
+}
+.cen_con div>ul{
+    margin-left:6px;
+}
+.cen_con div>ul>li{
+    font-size:14px;
+    padding:5px;
+}
+.cen_con div{
+    width:353px;
+    height:199px;
+    background-color:#ffffff;
+    border-bottom:1px solid #cccccc;
+    border-left:1px solid #cccccc;
+}
+.right_con div{
+    width:300px;
+    height:199px;
+    background-color:#ffffff;
+    border-bottom:1px solid #cccccc;
+    border-left:1px solid #cccccc;
+}
+.right_con>.r_box>ul{
+    margin-left:15px;
+}
+.right_con>.r_box>ul>li{
+    font-size:14px;
+    padding:6px;
+} 
+.right_con>.r_box>ul>li::before{
+    content:url(../images/bullet.jpg);
+}
