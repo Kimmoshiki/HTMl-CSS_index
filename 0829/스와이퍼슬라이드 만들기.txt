@@ -1,0 +1,14 @@
+제이쿼리 슬라이드 적용하기
+1. m_css폴더에 swiper.css 파일을 index.html문서에 스타일서식 연결한다.
+2. script폴더에 swiper.js파일을 index.html문서에 연결한다.
+3. 슬라이드가 들어갈 main slide영역에 태그를 작성한다.
+<div class="swiper mySwiper">
+  <div class="swiper-wrapper">
+     <div class="swiper-slide">a, img</div>
+     <div class="swiper-slide">a, img</div>
+     <div class="swiper-slide">a, img</div>
+  </div>
+  <div class="swiper-pagination"></div>
+</div>
+* pagination버튼은 부모 .swiper{position:relative;}속성을 넣어야 슬라이드 아래에 배치된다.
+4. script소스코드를 </body>전에 붙여넣기한다.
