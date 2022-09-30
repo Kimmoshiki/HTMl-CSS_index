@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02css_가시속성(display),box-model(박스모델)개념이해하기</title>
+    <style>
+        .p01{
+            background-color:#ffff00;
+            display:inline;
+        } 
+        .txt01{
+            background-color:#00ff00;
+            margin:10px;
+            height:80px;
+            display:block;
+        }       
+        div{
+            width:100px;height:100px;
+            background-color:#ffff00;
+        }
+
+        #box01{
+            border:5px solid #ff0000;
+            padding:10px;
+        }
+        #box02{
+            border-left:5px double #0000ff;
+            border-bottom:3px dashed #ff0000;
+            padding:100px 30px;/*위,아래 왼,오른*/
+        }
+        #box03{
+            border-left:10px dotted #00ff00;
+            border-bottom:3px solid #000000;
+            padding:10px 5px 10px 3px;/*위,오른쪽,아래.왼(시계방향)*/
+            margin:5px 10px;/*위,아래 왼,오른*/
+        }
+        #box04{
+            padding:10px 5px;
+            border:5px solid #ff0000;
+            box-sizing:border-box;/*css3에서 세롭게 추가된 속성 - 테두리, 패딩값을 크기에 포함하여 계산하는 속성이다.(결국 안쪽으로 폭이 좁아짐)*/
+        }
+
+    </style>
+</head>
+<body>
+    <h2>1.가시속성(display)</h2>
+    <p>html태그는 저마다 보이지 않는 특성을 가지고 있는데 이것을 'display'속성이라고 한다.</p>
+
+     <dl>
+        <dt>display속성의 종류</dt>
+        <dd>block</dd>
+        <dd>line-block</dd>
+        <dd>inline</dd>
+        <dd>table</dd>
+        <dd>cell</dd>
+        <dd>none</dd>
+        <dd>gird외 기타...</dd>
+     </dl>
+
+     <h3>블럭방식의 요소 - 제목태그, 문단태그, 수평선, 목록, div, 시멘틱구조태그.....</h3>
+    <p class="p01">p태그인 나는 블럭요소입니다. 왼쪽에서 오른쪽까지 내용을 무조건 자치하지요. 블럭요소는 줄바꿈을 하지않아도 자동으로 줄이 변경됩니다. 또한 가로크기, 세로크기값을 설정하여 크기를 지정할 수 있습니다. 블럭요소의 종류로는 p, h1~h6, div, header, nav, main, section, article, aside, footer, address, dl, dt, dd, ul, li, ol, form, fieldset, hr, table가 있습니다.</p>
+    <span>위 문단요소의 성격이 변경되어 현재 글자가 올라갑니다.</span>
+
+    <h3>인라인요소</h3>
+
+    <span class="txt01">span태그인 나는 인라인 요소입니다. 글자가 있는곳까지만 영역을 차지하지요.</span>
+
+    <span class="txt01">블럭요소와는 다르게 자동으로 줄이 변경이되지 않고 br요소를 사용하여 줄바꿈을 합니다.</span>
+
+    <span class="txt01">인라인요소는 크기값을 가질 수 없습니다. 대신 display속성을 block또는 line-block으로 변경하면 가능합니다.</span>
+
+    <span class="txt01">대표적인 태그로는 img, b, strong, sup, sub, input, label, button, textarea....등이 있습니다.</span>
+
+    <span class="txt01">span태그는 태그자체의 의미는 없지만 글자를 묶어서 서식을 적용하고자 할 때 사용.</span>
+
+    <span>태그자체의 의미는 없지만 글자를 묶어서 서식을 적용하고자 할 때 사용.</span>
+    <a href="#" title="">하이퍼 링크</a>
+    <a href="#" title="">하이퍼 링크</a>
+    <ins>글자에 밑줄긋기</ins>
+    <strong>글자강조하기</strong>
+    <s>취소선</s>
+
+
+
+
+
+    <h2>박스모델(box model)이란? 블럭요소와 인라인요소가 가질 수 있는 크기와 마진, 패딩, 테두리값을 사용하여 배치하는 개념을 말한다.</h2>
+    <dl>
+        <dt>사용속성 - 크기속성,테두리,마진,패딩</dt>
+        <dd>width, height(p.162) : 크기를 지정할 때 사용하며,px,%단위를 사용한다.</dd>
+        <dd>border(p.167) : 테두리를 지정하고자 할 때 사용하며 축약법으로는 'border:선두께 선모양 선색상'식으로 작성한다.</dd>
+        <dd>margin(p.164) : 선택한 요소를 기준으로 바깥쪽으로 여백을 설정할 때 사용.</dd>
+        <dd>padding(p.165) : 선택한 요소를 기준으로 안쪽으로 여백을 설정할 때 사용.</dd>
+    </dl>
+
+    <pre>
+        박스계산공식
+        가로전체크기=패딩+마진+테두리+가로크기
+        세로전체크기=패딩+마진+테두리+세로크기
+    </pre>
+
+    <div id="box01">박스크기 계산하기</div><br>
+
+    <div id="box02">박스크기 계산하기</div><br>
+
+    <div id="box03">박스크기 계산하기</div><br>
+
+    <div id="box04">박스크기 계산하기(120*130)</div><br>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>실습예제01_해외패키지 인기 기획전</title>
+    <style>
+        *{margin:0px; padding:0px;}
+        article{
+            width:1198px;
+            height:600px;
+            border:5px solid #000000;
+            position:relative;
+            margin:0px auto;
+        }
+        article>ul{
+            list-style:none;
+            display:flex;
+            justify-content:center;
+        }
+        ul>li{
+            margin:3px;
+        }
+        article>h2{
+            text-align:center;
+            line-height:100px;
+        }
+        .left_btn,.right_btn{
+            position:absolute;
+            top:45%;
+        }
+        .left_btn{
+            left:0px;
+        }
+        .right_btn{
+            right:0px;
+        }
+        .txt_color{
+            font-weight:lighter;
+        }
+    </style>
+</head>
+<body>
+    <article>
+        <h2><span class="txt_color">해외패키지</span> 인기 기획전</h2>
+        <ul>
+            <li><img src="./img01/photo_01.jpg" alt="미국이미지"></li>
+            <li><img src="./img01/photo_02.gif" alt="인도이미지"></li>
+            <li><img src="./img01/photo_03.png" alt="아프라카 두바이 이미지"></li>
+            <li><img src="./img01/photo_04.bmp" alt="플렌테이션베이 이미지"></li>
+        </ul>
+        <a href="#" title="left" class="left_btn"><img src="./img01/left_btn.png" alt="왼쪽버튼 이미지"></a>
+        <a href="#" title="right" class="right_btn"><img src="./img01/right_btn.png" alt="오른쪽버튼 이미지"></a>
+    </article>
+</body>
+</html>

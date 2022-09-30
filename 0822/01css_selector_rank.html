@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01css_selector_rank(선택자 우선순위 - 명시도)</title>
+    <style>
+        body{font-family:"맑은 고딕";}
+        h2{font-size:30px;}
+
+        header{
+            font-family:"바탕체";
+            background-color:#ffff00;
+        }
+
+    header > span{
+        font-family:"궁서체";
+    }
+
+    .color01{
+        color:#ff0000 !important;/*클래스 선택자보다 아이디 선택자가 우선된다.*/
+    }
+    #color02{
+        color:#0000ff;
+    }
+/* 컨트롤버튼 서식 */
+    .c_btn{
+        
+    }
+    .c_btn>li{
+        list-style:none;
+        background-color:#cccccc;
+        width:15px;height:15px;
+        display:inline-block;
+        border-radius:50%;
+    }
+    .on{background-color:#ff0000 !important;}
+
+    </style>
+</head>
+<body>
+   <h2>01css_selector_rank.html(선택자 우선순위 - 명시도)</h2>
+   <p>css는 서식을 적용할 때 첫줄부터 적용하고, 아래줄에 있는 서식을 순차적으로 내려가면서 적용한다.이것을 cascading이라고 하며, 만약 부모태그에 서식이 적용되어 있다면 부모의 서식을 기준으로 상속받아 아래 요소가 서식이 적용되는데, 이런 우선순위 규칙을 스타일 오버로딩(style overloding)이라고 한다.</p>
+
+   <h3>css선택자의 우선순위</h3>
+   <p>!important > inline > #id > .class > tag 외부서식 순으로 우선순위가 적용됨</p>
+
+   <header>
+    <span class="color01" id="color02" style="color:green">글자모양 변경하기(바탕체)</span>
+   </header>
+
+   <h3>컨트롤 버튼 구현하기</h3>
+   <ul class="c_btn">
+    <li class="on">&nbsp;</li>
+    <li>&nbsp;</li>
+    <li>&nbsp;</li>
+    <li>&nbsp;</li>
+   </ul>
+    
+   <img src="./images/point.png" alt="명시도 점수 계산">
+
+   <p>선택자의 종류에 따라 명시도 점수가 달라진다, 그림에서 보는 바와 같이 인라인스타일은 1000점 #id선택자는 100점, class,속성,의사 클래스 선택자는 10점,tag선택자 1점을 부여받는다.</p>
+   <p>선택자 사용시 '부모 > 자식요소'또는'부모 후손'처럼 사용하면 더 많은 명시도 점수를 얻을 수 있다.</p>
+
+   <p>예) ul #primary-nav li.active 은 명시도 몇점? 0112점</p>
+
+   <p>예) p > span {color:blue;} 와 div span {color:red;}은 명시도 몇점? 2점</p>
+</body>
+</html>

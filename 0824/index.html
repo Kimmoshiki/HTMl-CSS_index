@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>닷홈레이아웃</title>
+    <style>
+        *{margin:0px;padding:0px;}
+        header{
+            position:fixed;
+            background-color:#ffffff;
+            width:100%;
+            height:190px;
+        }
+        header>h1{
+            text-align:center;
+            padding:10px 0px;
+        }
+        header>aside{
+            position:fixed;
+            bottom:150px;
+            right:100px;
+        }
+        header>aside>img{
+            width:300px;
+        }
+        header>aside>a{
+            width:100px;
+            height:30px;
+            margin:0px auto;
+            text-align:center;
+            background-color:#333333;
+            color:#ffffff;
+            text-decoration:none;
+            display:block;
+            border-radius:20px;
+        }
+        .gnb{
+            height:40px;
+            background-color:#333333;
+        }
+        .gnb>ul{
+            width:1000px;
+            margin:0px auto;
+            display:flex;
+            justify-content:space-around;
+            list-style:none;
+        }
+        .gnb>ul>li>a{
+            line-height:40px;
+            text-decoration:none;;
+            color:#ffffff;
+        }
+        main{
+            padding-top:130px;
+        }
+        main>section{
+            width:1000px;
+            margin:0px auto;
+        }
+        footer{
+            background-color:#434c54;
+            text-align:center;
+        }
+    </style>
+</head>
+<body>
+    <!-- 상단 헤더영역 시작 -->
+    <header>
+        <h1>
+            <a href="index.html" title="메인페이지로 바로가기">
+            <img src="./img/main_logo.png" alt="상단로고">
+            </a>
+        </h1>
+        <nav class="gnb">
+            <ul>
+                <li><a href="#" title="메뉴">메뉴</a></li>
+                <li><a href="#" title="메뉴">메뉴</a></li>
+                <li><a href="#" title="메뉴">메뉴</a></li>
+                <li><a href="#" title="메뉴">메뉴</a></li>
+                <li><a href="#" title="메뉴">메뉴</a></li>
+                <li><a href="#" title="메뉴">메뉴</a></li>
+            </ul>
+        </nav>
+        <aside>
+            <img src="./img/sikhye_bn.png" alt="사이드베너">
+            <a href="#" title="위로가기">Top</a>
+        </aside>
+    </header>
+
+    <!-- 메인콘텐츠 시작 -->
+    <main>
+        <section>
+        <img src="./img/visual.jpg" alt="비주얼">
+        <img src="./img/content01.jpg" alt="콘텐츠1">
+        <img src="./img/content02.jpg" alt="콘텐츠2">
+        <img src="./img/content03.jpg" alt="콘텐츠3">
+        <img src="./img/content04.jpg" alt="콘텐츠4">
+        </section>
+
+    </main>
+
+    <!-- 푸터영역 시작 -->
+    <footer>
+        <adress>
+        <img src="./img/footer.jpg" alt="푸터영역">
+        </adress>
+    </footer>
+</body>
+</html>

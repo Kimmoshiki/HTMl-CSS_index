@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>04_웹표준레이아웃(2단)</title>
+    <style>
+        header,main,footer{
+            width:1280px;
+            margin:0px auto;
+        }
+        header{
+            background-color:aquamarine;
+            height:150px;
+            margin-bottom:10px;
+        }
+        main{
+            background-color:beige;
+            height:600px;
+            margin-bottom:10px;
+        }
+        main > section{
+            width:800px;
+            height:500px;
+            background-color:#4b4b4b;
+            float:left;
+        }
+        main > article{
+            width:480px;
+            height:300px;
+            background-color:#969696;
+            float:right;
+        }
+        footer{
+            background-color:#cccccc;
+            height:90px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 헤더영역 시작 -->
+    <header>
+        헤더영역<br>
+    </header>
+
+    <!-- 메인영역 시작 -->
+    <main>
+        <section>1단영역(800)</section>
+        <article>2단영역(480)</article>
+    </main>
+
+    <!-- 푸터영역 시작 -->
+    <footer>풋터영역</footer>
+</body>
+</html>

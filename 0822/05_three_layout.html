@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>05_웹표준레이아웃(3단)</title>
+    <style>
+        /* 브라우저의 기본 여백은 초기화 시켜 없앤다. */
+        *{margin:0px;padding:0px;}
+        header,main,footer{
+            width:1280px;
+            margin:0px auto;
+        }
+        header{
+            background-color:aquamarine;
+            height:150px;
+            margin-bottom:10px;
+        }
+        main{
+            background-color:beige;
+            height:600px;
+            margin-bottom:10px;
+        }
+        main > #left_con{
+            width:600px;
+            height:500px;
+            background-color:#4b4b4b;
+            float:left;
+        }
+        main > #cen_con{
+            width:400px;
+            height:300px;
+            background-color:#969696;
+            float:left;
+        }
+        main > #right_con{
+            width:280px; height:200px;
+            background-color:aliceblue;
+            float:right;
+        }
+        footer{
+            background-color:#cccccc;
+            height:90px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 헤더영역 시작 -->
+    <header>
+        헤더영역<br>
+    </header>
+
+    <!-- 메인영역 시작 -->
+    <main>
+        <section id="left_con">1단영역(600)</section>
+        <article id="cen_con">2단영역(400)</article>
+        <article id="right_con">3단영역(280)</article>
+    </main>
+
+    <!-- 푸터영역 시작 -->
+    <footer>풋터영역</footer>
+</body>
+</html>
