@@ -1,0 +1,57 @@
+@charset "utf-8"
+/* 여백초기화 - 모든요소를 선택하여 여백없애기 */
+*{margin:0px;padding:0px;}
+
+header>img{
+    float:left;/*이미지는 왼쪽 ,글자는 오른쪽*/
+    width:235px;
+    margin-top:20px;
+    margin-right:30px;
+}
+header{
+    margin-bottom:30px;
+}
+
+
+
+
+
+
+
+
+main{
+    line-height: 30px;
+    padding:10px;
+    font-family: "고딕체";
+}
+footer{
+    font-family:"고딕체";
+    text-align: center;
+    line-height: 20px;
+    padding: 40px;
+}
+address{
+    font-style:normal;
+}
+
+
+main>p,section>article>p{
+    color:#808080;
+}
+
+.txt01{
+    font-size: 32px;
+    font-weight: bold;
+    color:blue;
+    line-height: 1px;
+}
+.txt02{
+    font-weight: bold;
+    font-size:18px;
+    color:#555555;
+}
+.txt03{
+    color:#204875;
+    font-size:18px;
+}
+

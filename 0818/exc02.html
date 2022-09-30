@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css_실습예제02</title>
+    <style>
+        article{
+            font-family: '고딕체';
+            color:#4b4b4b;
+            line-height: 20px;
+        }
+        .txt01{
+            font-size:24px;
+            font-weight:bold;
+            color:#0059ff;
+        }
+        .txt02{
+            font-weight:bold;
+            color:#0059ff;  
+        }
+        .txt03{
+            color:#ff0000;
+            font-size:20px;
+            font-weight:bold;
+        }
+        .txt04{
+            color:#707070;
+        }
+        .txt05{
+            color:#5c6e8f;
+        }
+        .txt06{
+            font-size:20px;
+        }
+        .txt07{
+            font-weight: bold;
+        }
+        .box01{
+            background-color: #00355f;
+            color:#ffffff;
+            border : 1px solid #333333;
+            font-size:12px;
+        }
+        .ch01{display:none;}
+
+    </style>
+</head>
+<body>
+    <article>
+    <hr>
+     <input type="checkbox" id="c01"><label for="c01" class="ch01">체크</label>
+    <p><span class="txt01">지금 알고 있는 걸 그때도 알았더라면</span>  
+        <span class="box01">이벤트</span><br>
+    <span class="txt04">류시화 (엮음) &#x007C; 열림원 &#x007C; 2014년 12월 03일</span></p>
+
+    <p><span class="txt06">&#x2606;&#x2606;&#x2606;&#x2606;&#x2606;</span> (0개의 리뷰가 있습니다)</p>
+
+    <p><span class="txt07">도서</span> 
+        <span class="txt03">8,100원</span>
+         <span class="txt05">[<span class="txt07">10</span>&#x0025;&#8595; &#x002B; 
+         <span class="txt07">5</span>&#x0025; 적립]</span></p>
+
+    <p>지금 주문하면 <span class="txt02">내일(22일,토)도착 예정</span> 입니다</p>
+    </article>
+    <p>
+        <a href="http://validator.kldp.org/check?uri=referer"
+          onclick="this.href=this.href.replace(/referer$/,encodeURIComponent(document.URL))"><img
+          src="//validator.kldp.org/w3cimgs/validate/html5-blue.png" alt="Valid HTML 5" height="15" width="80"></a>
+      </p>
+</body>
+</html>

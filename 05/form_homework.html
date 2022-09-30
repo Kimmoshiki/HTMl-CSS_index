@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+  <meta charset="utf-8">
+  <title>문의하기 양식만들기 실습예제</title>
+   <style> 
+       .l01{
+           border:1px solid #333; }
+       .l02{
+            border:1px solid #E2E2E2;}
+
+       .a02{
+             color:red;}
+
+</style>
+
+ </head>
+ <body>
+  <h4 style="text-align:right;"><span class="a02">&#x002A;</span>표시는 필수 입력 항목입니다</h4>
+  <hr class="l01">
+  <p><span class="a02">&#x002A;</span><b>문의유형</b>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  
+    <select>
+    <option>제품문의</option>
+    <option>문의유형1</option>
+    <option>문의유형2</option>
+    <option>문의유형3</option>
+  </select>
+</p>
+
+<hr class="l02">
+ <p><span class="a02">&#x002A;</span><b>성함</b>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp         
+    <input type="text" maxlangth="16">
+</p>
+
+ </p>
+<hr class="l02">
+  <p><span class="a02">&#x002A;</span><b>회사명</b>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp
+    <input type="text" maxlangth="20">
+ </p>
+
+</p>
+<hr class="l02">
+  <p><span class="a02">&#x002A;</span><b>직급</b>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 
+    <input type="text" maxlangth="16">
+</p>
+
+ </p>
+<hr class="l02">
+  <p><span class="a02">&#x002A;</span><b>부서명</b>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp  
+    <input type="text" maxlangth="16">
+ </p>
+
+<hr class="l02">
+  <p><span class="a02">&#x002A;</span><b>회사규모</b>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp                
+ <select>
+    <option>1~50</option>
+    <option>50~100</option>
+    <option>100~150</option>
+    <option>150~200</option>
+    <option>200~250</option>
+    <option>250~300</option>
+  </select>
+ </p>
+
+<hr class="l02">
+  <p><span class="a02">&#x002A;</span><b>기관구분</b>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  
+    <input type="radio" name="kind" id="a"><label for="a">기업</label>
+  <input type="radio" name="kind" id="b"><label for="b">공공</label>
+    <input type="radio" name="kind" id="c"><label for="c">금융</label>
+  <input type="radio" name="kind" id="d"><label for="d">기타</label>
+ </p>
+
+<hr class="l02">
+  <p><span class="a02">&#x002A;</span><b>전화번호</b>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp                 
+ <select>
+    <option>010</option>
+    <option>011</option>
+    <option>014</option>
+    <option>018</option>
+  </select>
+- <input type="text" maxlangth="4">
+-<input type="text" maxlangth="4">
+ </p>
+
+<hr class="l02">
+  <p><span class="a02">&#x002A;</span><b>E-mail</b>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  
+    <input type="text" maxlangth="16">
+  @<input type="text" maxlangth="16">
+ <select>
+    <option>메일계정선택</option>
+    <option>gmail.com</option>
+    <option>naver.com</option>
+    <option>daum.net</option>
+  </select>
+ </p>
+
+<hr class="l02">
+  <p><b>문의제품</b>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  
+    <input type="checkbox" id="c01"><label for="c01">PC 화면 보안</label>
+    <input type="checkbox" id="c02"><label for="c02">모바일 App 보안</label>
+    <input type="checkbox" id="c03"><label for="c03">멀티미디어 보안</label>
+    <input type="checkbox" id="c04"><label for="c04">CCTV 보안</label><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <input type="checkbox" id="c05"><label for="c05">문서 DRM</label>
+    <input type="checkbox" id="c06"><label for="c06">웹 위변조 보안</label>
+    <input type="checkbox" id="c07"><label for="c07">취약점 통합 보안</label>
+    <input type="checkbox" id="c08"><label for="c08">기타</label>
+ </p>
+
+<hr class="l02">
+  <p><span class="a02">&#x002A;</span><b>방문경로</b>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <input type="radio" name="way" id="1"><label for="1">네이버 검색</label>
+  <input type="radio" name="way" id="2"><label for="2">구글 검색</label>
+    <input type="radio" name="way" id="3"><label for="3">다음 검색</label>
+  <input type="radio" name="way" id="4"><label for="4">보도자료</label>
+    <input type="radio" name="way" id="5"><label for="5">신문광고</label><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+  <input type="radio" name="way" id="6"><label for="6">온라인광고</label>
+    <input type="radio" name="way" id="7"><label for="7">지인소개</label>
+  <input type="radio" name="way" id="8"><label for="8">뉴스레터</label>
+    <input type="radio" name="way" id="9"><label for="9">기타</label>
+<input type="text" maxlangth="16">
+ </p>
+
+<hr class="l02">
+ <p><b>문의내용</b>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+     &nbsp&nbsp&nbsp&nbsp
+<textarea cols="50" rows="5"></textarea>      
+</p>
+
+<hr class="l02">
+<br>
+ <p style="text-align:center;"><input type="submit" value="문의하기"> <input type="reset" value="취소하기">
+</p>
+ <br>
+ </body>
+</html>

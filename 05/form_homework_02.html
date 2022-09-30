@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>form_tag_예제02</title>
+   <style>
+     .c01{
+         color:red;}
+    
+      table{
+         width:800px;
+         border-top:2px solid #333;
+         border-bottom:1px solid #ccc;
+         border-collapse:collapse;
+          }
+
+       td, th {
+              border-bottom:1px solid #333;
+              line-height:40px;}
+
+         th {
+              width:200px; 
+              background-color:#ccc;}
+
+          td {padding-left:10px;}
+      
+     .btn01{color:#fff;background-color:purple;padding:6px 10px;
+               border:none;}
+
+
+   </style>
+ </head>
+ <body>
+   <form name="분양신청서" method="post" action="a.php">
+  <table>
+   <caption>분양신청서</caption>
+    <tr>
+      <th><span class="c01">*</span> 성명</th><td><input type="text" required></td>
+    </tr>
+
+    <tr>
+      <th><span class="c01">*</span> 주소</th>
+ <td>
+  <select required>
+   <option>시/도</option>
+   <option>경기도</option>
+   <option>서울특별시</option>
+   <option>강원도</option>
+  </select>
+  <select required>
+   <option>군/구</option>
+  </select>
+  <select required>
+   <option>읍/면/동</option>
+  </select>
+ </td>
+    </tr>
+
+    <tr>
+     <th><span class="c01">*</span> 휴대폰 번호</th>
+  <td>
+   <select required>
+     <option>010</option>
+   </select>
+- <input type="text" required>
+- <input type="text" required>
+   </td>
+    </tr>
+
+    <tr>
+      <th><span class="c01">*</span>분양현장명</th>
+ <td>
+  <select required>
+   <option>선택</option>
+  </select>
+ </td>
+    </tr>
+    <tr>
+
+      <th><span class="c01">*</span>희망분양평형</th>
+ <td>
+  <input type="radio" name="A" id="a"><label for="a">20평형</label>
+  <input type="radio" name="A" id="b"><label for="b">25평형</label>
+  <input type="radio" name="A" id="c"><label for="c">30평형</label>
+  <input type="radio" name="A" id="d"><label for="d">35평형</label>
+  <input type="radio" name="A" id="e"><label for="e">40평형 이상</label>
+
+ </td>
+    </tr>
+   </table>
+
+<input type="submit" value="등록" class="btn01">
+</form>
+ </body>
+</html>

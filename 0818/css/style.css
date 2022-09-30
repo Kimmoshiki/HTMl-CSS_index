@@ -1,0 +1,15 @@
+@charset "wtf-8";
+
+/* 구글 웹폰트 주소를 가져와 삽입한다. */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap');
+
+
+.txt_color02{
+    color:#0000ff;
+    font-size:26px;
+    text-decoration:underline;
+}
+
+.txt_font{
+    font-family: 'Noto Sans KR', sans-serif;
+}
